@@ -2,8 +2,12 @@
     display: grid;
     grid-gap: 20px;
     border: 2px solid;
-    /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
-    grid-template-columns: fit-content(100px) 150px 150px 150px
+    grid-template-columns: 1fr 10frp 1fr;
+    grid-template-rows: 150px 150px 100px;
+    grid-template-areas: 
+        "sidebar-1      content     sidebar-2"
+        "sidebar-1      content     sidebar-2"
+        "footer         footer      footer";
 }
 
 .item {
@@ -11,4 +15,36 @@
     text-align: center;
 }
 
+.footer {
+    grid-area: footer;
+    background: darkblue;
+}
+
+.item1 {
+    grid-area: sidebar-1;
+    background: chocolate;
+}
+
+.item2 {
+    grid-area: content;
+    background: cornflowerblue;
+}
+
+.item3 {
+    grid-area: sidebar-2;
+    background: cornsilk;
+}
+
+@media (max-width: 700px) {
+
+    .container {
+        
+  
+        grid-template-areas: 
+            "content      content     content"
+            "sidebar-1      sidebar-1     sidebar-2"
+            "footer         footer      footer";
+    }
+
+}
 

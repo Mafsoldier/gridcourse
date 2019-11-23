@@ -1,0 +1,21 @@
+.container {
+    display: grid;
+    grid-gap: 20px;
+    border: 2px solid;
+    grid-template-columns: repeat(10, 1fr);
+
+}
+
+.item {
+    background: coral;
+    text-align: center;
+}
+
+/* justify-items:
+align-items:
+
+justify-conntent:
+align-content:
+
+align-self:
+justify-self: */

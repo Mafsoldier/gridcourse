@@ -1,0 +1,21 @@
+.container {
+    display: grid;
+    grid-gap: 20px;
+    border: 2px solid;
+    grid-template-areas: 
+    " 💩 💩 💩 💩 🍔 🍔 🍔 🍔 "
+    " 💩 💩 💩 💩 🍔 🍔 🍔 🍔 "
+    " 💩 💩 💩 💩 🍔 🍔 🍔 🍔 "
+    " 💩 💩 💩 💩 🍔 🍔 🍔 🍔 "
+    ;
+}
+
+.item {
+    background: darkorange;
+    text-align: center;
+}
+
+.item3 {
+    grid-column:   💩-start / 🍔-end;
+    grid-row-end:  💩-end;
+}
