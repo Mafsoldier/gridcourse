@@ -1,0 +1,19 @@
+.container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(5, 1fr);
+    border: 2px solid;
+    
+}
+
+
+.poop {
+
+    /* grid-column-start: 2 ;
+    grid-column-end: 5; */
+    grid-column: 1 / -4;
+    grid-row: 1 / 8;
+    background: #BADA55;
+
+}
+

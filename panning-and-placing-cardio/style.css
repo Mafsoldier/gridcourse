@@ -1,0 +1,61 @@
+.container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(10, 1fr 2fr);
+    border: 2px solid;
+    grid-template-rows: repeat(10, 50px);
+    
+}
+
+
+
+.item {
+    background: yellow;
+}
+
+
+.item1 {
+
+    grid-column: 3 / 5;
+    background: purple;
+}
+
+.item2 {
+    background: pink;
+
+grid-column: 5 / -1;
+
+}
+
+.item5 {
+
+    grid-column: span 2;
+    grid-row: span 2;
+    background: black;
+
+}
+
+.item8 {
+    grid-row: span 2;
+    background: silver;
+}
+
+.item15 {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    background: floralwhite;
+}
+
+.item18 {
+    grid-column-start: span 4;
+    grid-column-end: 9;
+    background: greenyellow;
+}
+
+.item20 {
+
+    grid-row-start: 4;
+    grid-row-end: span 3;
+    background: honeydew;
+
+}
